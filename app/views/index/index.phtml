@@ -1,0 +1,30 @@
+<div id="login_canvas">
+    <form id="loginForm" action="/login" method="POST">
+        <div id="company_icon">
+            <img id="logo" src="./img/logoAdmin_paranoid.png" alt="">
+        </div>
+        <div  id="loadDiv"><img style="display: none;" id="load" src="./img/load.gif" width="90px" height="75px"></div>
+        <div style="display: none;" id="error_message">
+            <p id="success_message" ></p>
+            
+        </div>
+        <div id="user">
+            <input name="login" id="user_field" type="text" class="login_form" placeholder="Usuário" size="25">
+        </div>
+        <div id="password">
+            <input name="password" id="password_field" type="password" class="login_form" placeholder="Senha" size="25">
+        </div>
+        <div id="code">
+            <input style="display: none;" id="code_field" class="login_form" name="code" type="text">
+        </div>
+        <div id="login">
+            <button type="button" id="submit">Login</button>
+        </div>
+        <span style="color: red;" id="search">
+            <a href="">Pesquisa</a>
+        </span>
+    </form>
+        
+</div>
+<?php $this->assets->outputCss('ajaxColection'); ?>
+<?php $this->assets->outputCss('jsColection'); ?>

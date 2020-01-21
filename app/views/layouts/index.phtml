@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+        <title>Login Phalcon</title>
+        <?php $this->assets->outputCss('cssColection'); ?>
+    </head>
+    <body>
+        <header>
+            <img id="logo_header" src="/img/logoAdmin_paranoid.png" alt="">
+            <div id="nav">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Contato</a></li>
+                    <li><a href="">Sobre</a></li>
+                    <li><a id="" href=>Login/Cadastro</a></li>
+                    <span id="clock"> </span>
+                    
+                </ul>
+            </div>
+                
+            
+        </header>
+        <div class="container">
+            <!-- Aqui ele pega o conteudo da view renderizada pelo método na pasta index/index.phtml -->
+            <?php echo $this->getContent(); ?>
+        </div>
+        <!-- jQuery first, then Popper.js, and then Bootstrap's JavaScript -->
+        <?php $this->assets->outputJs('ajaxColection'); ?>
+        <?php $this->assets->outputCss('bootstrapColection'); ?>
+        <?php $this->assets->outputJs('jsColection'); ?>
+    </body>
+</html>
+
